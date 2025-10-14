@@ -1,0 +1,11 @@
+python-dotenv 
+langchain 
+langchain-pinecone 
+pinecone
+langchain-google-genai 
+pinecone-client 
+langchain-text-splitters 
+langchain-cohere 
+langchain-community 
+pypdf 
+langchain-groq 

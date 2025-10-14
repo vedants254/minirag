@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.env
+task.txt
+simplified_main.py
+last.py
