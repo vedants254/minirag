@@ -1,0 +1,57 @@
+Q1. What are the most common types of cancer worldwide?
+
+The most common cancers worldwide are breast, lung, colon and rectum, and prostate cancers [0]. According to the data, the most common cancers in 2020 were breast (2.26 million cases), lung (2.21 million cases), colon and rectum (1.93 million cases), prostate (1.41 million cases), skin (non-melanoma) (1.20 million cases), and stomach (1.09 million cases) [1].
+
+Sources
+
+Response Time: 1.00s | Cost: $0.002063
+
+Q2. What major factors are responsible for about one-third of all cancer deaths?
+
+Sources
+
+Response Time: 1.00s | Cost: $0.002063
+
+Around one-third of deaths from cancer are due to tobacco use, high body mass index, alcohol consumption, low fruit and vegetable intake, and lack of physical activity [0].
+
+Sources
+
+Response Time: 0.87s | Cost: $0.002057
+
+Q3. How can the risk of cancer be reduced according to the text?
+
+Sources
+
+Response Time: 0.87s | Cost: $0.002057
+
+The risk of cancer can be reduced by avoiding risk factors and implementing existing evidence-based prevention strategies [0]. This can prevent between 30 and 50% of cancers [0]. Cancer risk can be reduced by not using tobacco [1], maintaining a healthy body weight [1], eating a healthy diet, including fruit and vegetables [1], doing physical activity on a regular basis [1], avoiding or reducing consumption of alcohol [1], getting vaccinated against HPV and hepatitis B if you belong to a group for which vaccination is recommended [1], avoiding ultraviolet radiation exposure and/or using sun protection measures [1], ensuring safe and appropriate use of radiation in health care [1], minimizing occupational exposure to ionizing radiation [1], and reducing exposure to outdoor air pollution and indoor air pollution, including radon [1].
+
+Sources
+
+Response Time: 1.12s | Cost: $0.002060
+
+Q4. What is the difference between early diagnosis and screening in cancer detection?
+
+Sources
+
+Response Time: 1.12s | Cost: $0.002060
+
+Early diagnosis and screening are two components of early detection in cancer, but they have distinct differences. Early diagnosis refers to the process of identifying cancer in its early stages through clinical evaluation and diagnostic services, and timely referral to treatment services [1]. On the other hand, screening aims to identify individuals with findings suggestive of a specific cancer or pre-cancer before they have developed symptoms, and further tests to establish a definitive diagnosis should follow [0].
+
+In other words, early diagnosis focuses on identifying cancer in individuals who are already experiencing symptoms, whereas screening targets asymptomatic individuals to detect cancer at an early stage [0]. This distinction is crucial, as screening programmes are effective for some but not all cancer types and require special equipment and dedicated personnel [0].
+
+Sources
+
+Response Time: 1.02s | Cost: $0.002060
+
+Q5. What are the main forms of cancer treatment mentioned?
+
+Sources
+
+Response Time: 1.02s | Cost: $0.002060
+
+The main forms of cancer treatment mentioned are surgery, radiotherapy, and/or systemic therapy, which includes chemotherapy, hormonal treatments, and targeted biological therapies [0].
+
+Sources
+
+Response Time: 1.04s | Cost: $0.002049

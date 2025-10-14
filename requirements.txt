@@ -9,3 +9,4 @@ langchain-cohere
 langchain-community 
 pypdf 
 langchain-groq 
+streamlit 

@@ -5,3 +5,6 @@ __pycache__/
 task.txt
 simplified_main.py
 last.py
+Dockerfile
+minirag/
+.gitattributes

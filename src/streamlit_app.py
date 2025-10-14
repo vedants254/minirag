@@ -22,8 +22,7 @@ class TokenUsageCallback(BaseCallbackHandler):
             self.output_tokens += response.llm_output['token_usage']['completion_tokens']
 
 st.set_page_config(
-    page_title="Mini RAG",
-    page_icon="🤖",
+    page_title="Mini rag",
     layout="wide",
 )
 
@@ -66,8 +65,7 @@ def calculate_embedding_cost(chunks):
     embedding_cost = (total_tokens / 1_000_000) * 0.10
     return embedding_cost
 
-# --- Citation Logic ---
-def extract_citation_numbers(answer_text: str):
+def extract_citation_numbers(answer_text):
     pattern = r'\[(\d+)\]'
     citations = re.findall(pattern, answer_text)
     seen = set()
@@ -79,7 +77,7 @@ def extract_citation_numbers(answer_text: str):
             unique_citations.append(num)
     return unique_citations
 
-def format_response(result: dict):
+def format_response(result):
     answer_text = result.get("answer", "")
     context_docs = result.get("context", [])
     
@@ -101,13 +99,12 @@ def format_response(result: dict):
         "citations": citations
     }
 
-# --- Sidebar ---
 with st.sidebar:
-    st.header("Data Input")
+    st.header("input")
     
-    uploaded_file = st.file_uploader("Upload a PDF", type="pdf")
+    uploaded_file = st.file_uploader("upload pdf", type="pdf")
     if uploaded_file:
-        with st.spinner("Processing PDF..."):
+        with st.spinner("processing pdf"):
             start_time = time.time()
             with open(uploaded_file.name, "wb") as f:
                 f.write(uploaded_file.getbuffer())
@@ -121,13 +118,13 @@ with st.sidebar:
             
             os.remove(uploaded_file.name)
             end_time = time.time()
-            st.success(f"PDF processed in {end_time - start_time:.2f} seconds!")
-            st.info(f"Embedding Cost: ${embedding_cost:.6f}")
+            st.success(f"processing time= {end_time - start_time:.2f}")
+            st.info(f"emebedding cost= ${embedding_cost:.6f}")
 
     st.markdown("---")
-    text_input = st.text_area("Or enter text")
-    if st.button("Process Text") and text_input:
-        with st.spinner("Processing text..."):
+    text_input = st.text_area(" or can enter text")
+    if st.button("process the text ") and text_input:
+        with st.spinner("processing text "):
             start_time = time.time()
             chunks = chunk_text(text_input)
             embedding_cost = calculate_embedding_cost(chunks)
@@ -136,15 +133,14 @@ with st.sidebar:
             st.session_state.vector_store = store_embeddings(chunks)
             st.session_state.retrieval_chain = create_retrieval_chain_final(llm, st.session_state.vector_store)
             end_time = time.time()
-            st.success(f"Text processed in {end_time - start_time:.2f} seconds!")
-            st.info(f"Embedding Cost: ${embedding_cost:.6f}")
+            st.success(f"processing time= {end_time - start_time:.2f}")
+            st.info(f"emebedding cost= ${embedding_cost:.6f}")
 
     st.markdown("---")
-    st.header("Total Cost")
+    st.header("final cost")
     st.write(f"${st.session_state.total_cost:.6f}")
 
 
-# --- Main Content ---
 st.title("Mini rag")
 st.markdown("A mini rag app.")
 

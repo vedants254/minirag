@@ -40,5 +40,4 @@ DO NOT MENTION 'Used Chunks : <chunk numbers> ' IN THE END OF THE ANSWER.
 )
 
 def get_citation_prompt():
-    """Return the citation prompt"""
     return prompt
