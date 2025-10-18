@@ -1,15 +1,4 @@
----
-title: Minirag
-emoji: 🚀
-colorFrom: red
-colorTo: red
-sdk: docker
-app_port: 8501
-tags:
-- streamlit
-pinned: false
-short_description: Streamlit template space
----
+
 # Mini RAG
 mini rag which extracts information as per user query. 
 resume = ( https://drive.google.com/file/d/1KmFouzTYfeRR_U8BX3IFLO3gU48fITEE/view?usp=sharing )
