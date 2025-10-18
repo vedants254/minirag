@@ -105,6 +105,12 @@ Key Components:
 - These keys are managed through a `.env` file in the root of the project.
 - Refer to the "Quick Start" section for instructions on setting up the `.env` file.
 
+### 7. Citations strategy
+- While providing the input to the llm, at the chunking stage , we store metadata and then the chunks (with numbering from index 0 ) are then embedded and stored in a vector database. 
+- SO we query it and once after DB search and reranker, we get top k chunks and now before passing it to the LLM we add the metadata with the chunks and prompt the LLM to generate the citation markers. THis contextual povision of metadata helps the LLM to avoid generating random citations and stay grounded. 
+- Once these are done and final answer is made with inliner citations , we track those back from the answer , using the index method back to their sources and is displayed. 
+
+
 ## chunking params used 
 - **Chunk Size:** 1000 characters
 - **Chunk Overlap:** 150 characters
