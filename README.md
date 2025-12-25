@@ -1,6 +1,9 @@
 
 # Mini RAG
-mini rag which extracts information as per user query. 
+mini rag which extracts information as per user query with incline citation markers.
+
+DEPLOYED HERE: https://huggingface.co/spaces/vedants254/minirag
+
  
 ``` 
 +--------------------------- Docker Container -----------------------------+
